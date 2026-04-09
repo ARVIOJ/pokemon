@@ -1,0 +1,365 @@
+/* body{
+    background-color: #374251;
+    color: #F4F4F5;
+    font-size: 25px;
+    display: grid;
+    place-items: center;
+}
+
+#imagen-pokemon{
+    border-radius: 50%;
+   
+}
+
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 14px/20px "Lato", Arial, sans-serif;
+    background: linear-gradient(to right, #374251, #374251);
+}
+
+.container{
+    display: grid;
+    place-items: center;
+}
+
+.logo-pokemon{
+    width: 400px;
+    margin-top: 15px;
+}
+
+.input-nombre {
+    width: 100%;
+    max-width: 190px;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.txt-nombre{
+font-size: 24px;
+color: snow;
+}
+
+.pokemon-card-container {
+    background: linear-gradient(to right, #7e7e7e, #7e7e7e);
+    width: 320px;
+    height: 430px;
+    margin: 1%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+
+.pokemon-card-container:hover img {
+    animation: animar 2s infinite ease;
+}
+.container-generaciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.backgroud {
+    text-align: center;
+    background: linear-gradient(to right, #46464673, #4949497d),url('./bg-pokemon/normal.jpg');
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+}
+
+.content {
+    background: linear-gradient(to right, #b3b3b3, #adadad);
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.pokemon-name {
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+    padding: 10px;
+}
+
+.pokemon-type {
+    background-color: black;
+    padding: 7px;
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    display: block;
+    text-align: center;
+    position: relative;
+    top: -70px;
+}
+
+.pokemon-stats{
+padding-bottom: 10px;
+}
+
+
+.pokemon-stats>p {
+    letter-spacing: 1px;
+}
+
+.btnCambiarPokemon{
+    background-color: #FFCC01;
+    color: #2E68B3;
+    border: 2px solid #2E68B3; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 15px;
+}
+
+.btnCambiarPokemon:hover{
+    background-color: #2E68B3;
+    color: #FFCC01;
+    border: 2px solid #FFCC01; 
+    
+}
+
+
+/* tipo agua */
+.--pcc-water {
+    background: linear-gradient(to right, #288fe3, #279cfb);
+}
+
+.--bg-water {
+    background: linear-gradient(to right, #288fe342, #279cfb63),url('./bg-pokemon/water.webp');
+    background-size: cover;
+}
+
+.--content-water {
+    background: linear-gradient(to right, #6695ac, #86bcc1);
+}
+
+/* tipo psiquico*/
+.--pcc-psychic {
+    background: linear-gradient(to right, #e328a3, #fb27b1);
+}
+
+.--bg-psychic {
+    background: linear-gradient(to right, #700e4a41, #77015d4e),url('./bg-pokemon/psychic.png');
+    background-size: cover;
+}
+
+.--content-psychic {
+    background: linear-gradient(to right, #ac6695, #c186bc);
+}
+
+/* tipo hierba */
+
+.--pcc-grass {
+    background: linear-gradient(to right, #28e34e, #27fb4e);
+}
+
+.--bg-grass {
+    background: linear-gradient(to right, #0e702532, #01772c5e),url('./bg-pokemon/grass.png');
+    background-size: cover;
+}
+
+.--content-grass {
+    background: linear-gradient(to right, #66ac95, #86c1bc);
+}
+
+/* tipo fuego */
+
+.--pcc-fire {
+    background: linear-gradient(to right, #e35728, #fb7127);
+}
+
+.--bg-fire {
+    background: linear-gradient(to right, #70370e5a, #772e015a),url('./bg-pokemon/fire.jpg');
+    background-size: cover;
+}
+
+.--content-fire {
+    background: linear-gradient(to right, #ac8066, #c19e86);
+}
+
+/* tipo electric */
+
+.--pcc-electric {
+    background: linear-gradient(to right, #e3c228, #fbd427);
+}
+
+.--bg-electric {
+    background: linear-gradient(to right, #704a0e55, #775d0148),url('./bg-pokemon/electric.jpg');
+    background-size: cover;
+}
+
+.--content-electric {
+    background: linear-gradient(to right, #aca266, #c1b586);
+}
+
+/* tipo fantasma*/
+
+.--pcc-ghost {
+    background: linear-gradient(to right, #a328e3, #b127fb);
+}
+
+.--bg-ghost {
+    background: linear-gradient(to right, #4a0e705a, #5d017758),url('./bg-pokemon/ghost.png');
+    background-size: cover;
+}
+
+.--content-ghost {
+    background: linear-gradient(to right, #9666ac, #b186c1);
+}
+
+/* tipo roca*/
+
+.--pcc-rock {
+    background: linear-gradient(to right, #8c8b85, #82817a);
+}
+
+.--bg-rock {
+    background: linear-gradient(to right, #57565458, #5f5f5e65),url('./bg-pokemon/rock.jpg');
+    background-size: cover;
+}
+
+.--content-rock {
+    background: linear-gradient(to right, #9a9a99, #a5a5a5);
+}
+
+
+/* tipo bicho*/
+
+.--pcc-bug {
+    background: linear-gradient(to right, #a3e328, #b1fb27);
+}
+
+.--bg-bug {
+    background: linear-gradient(to right, #4a700e42, #5d770141),url('./bg-pokemon/bug.jpg');
+    background-size: cover;
+}
+
+.--content-bug {
+    background: linear-gradient(to right, #96ac66, #b1c186);
+}
+
+/* tipo veneneo */
+
+.--pcc-poison {
+    background: linear-gradient(to right, #a328e3, #b127fb);
+}
+
+.--bg-poison {
+    background: linear-gradient(to right, #4a0e7038, #5d01773f),url('./bg-pokemon/poison.jpg');
+    background-size: cover;
+}
+
+.--content-poison {
+    background: linear-gradient(to right, #9666ac, #b186c1);
+}
+
+
+/* tipo hada */
+
+.--pcc-fairy {
+    background: linear-gradient(to right, #e328a3, #fb27b1);
+}
+
+.--bg-fairy {
+    background: linear-gradient(to right, #700e4a30, #77015d41),url('./bg-pokemon/fairy.jpg');
+    background-size: cover;
+}
+
+.--content-fairy {
+    background: linear-gradient(to right, #ac6695, #c186bc);
+}
+
+/* tipo lucha */
+
+.--pcc-fighting {
+    background: linear-gradient(to right, #e32828, #fb2727);
+}
+
+.--bg-fighting {
+    background: linear-gradient(to right, #700e0e4e, #77010152),url('./bg-pokemon/fighting.jpg');
+    background-size: cover;
+}
+
+.--content-fighting {
+    background: linear-gradient(to right, #ac6666, #c18686);
+}
+
+/* tipo hielo*/
+
+.--pcc-ice {
+    background: linear-gradient(to right, #28e3d4, #27fbf1);
+}
+
+.--bg-ice {
+
+    background: linear-gradient(to right, #0e707069, #0177776c),url('./bg-pokemon/ice.jpg');
+    background-size: cover;
+}
+
+.--content-ice {
+    background: linear-gradient(to right, #66acac, #86c1c1);
+}
+
+/* tipo dragon*/
+
+.--pcc-dragon {
+    background: linear-gradient(to right, #e32828, #fb2727);
+}
+
+.--bg-dragon {
+    background: linear-gradient(to right, #700e0e48, #77010132),url('./bg-pokemon/dragon.jpg');
+    background-size: cover;
+}
+
+.--content-dragon {
+    background: linear-gradient(to right, #ac6666, #c18686);
+}
+
+/* tipo tierra */
+
+.--pcc-ground {
+    background: linear-gradient(to right, #746d40, #645b35);
+}
+
+.--bg-ground {
+    background: linear-gradient(to right, #63552a56, #453a0443),url('./bg-pokemon/ground.jpg');
+    background-size: cover;
+}
+
+.--content-ground {
+    background: linear-gradient(to right, #a89e66, #c1b586);
+}
+
+@keyframes animar{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon v5</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+
+    <div class="container">
+      <img class="logo-pokemon" src="logo.png" alt="" />
+      <div id="pcc" class="pokemon-card-container">
+        <div class="pokemon-card">
+          <div id="bg" class="backgroud">
+            <img id="imagen-pokemon" class="image" src="" alt="" />
+          </div>
+
+          <div id="cnt" class="content">
+            <h1 id="nombre-pokemon" class="pokemon-name">Pikachu</h1>
+            <span id="tipo1" class="pokemon-type">Electric</span>
+            
+            <div class="pokemon-stats">
+              <p id="No_Pokedex">Numero en pokedex: 0</p>
+              <p id="Health_points">HP : 12</p>
+              <p id="Attacks">Attacks : 12</p>
+              <p id="Defense">Defense : 12</p>
+              <p id="Speed">Speed : 12</p>
+              <p id="Movement">Movements : 12</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-generaciones">
+        <button id="btnCambiar" class="btnCambiarPokemon" onclick="cambiarPokemon()">Cambiar Pokemon</button>
+        <button id="btnPrimerGeneracion" class="btnCambiarPokemon" onclick="primerGeneracion()">1er Generación</button>
+        <button id="btnSegundaGeneracion" class="btnCambiarPokemon" onclick="segundaGeracion()">2da Generación</button>
+        <button id="btnTerceraGeneracion" class="btnCambiarPokemon" onclick="terceraGeracion()">3ra Generación</button>
+        <button id="btnCuartaGeneracion" class="btnCambiarPokemon" onclick="cuartaGeracion()">4ta Generación</button>
+        <button id="btnQuintaGeneracion" class="btnCambiarPokemon" onclick="quintaGeracion()">5ta Generación</button>
+        <button id="btnSextaGeneracion" class="btnCambiarPokemon" onclick="sextaGeracion()">6ta Generación</button>
+        <button id="btnSeptimaGeneracion" class="btnCambiarPokemon" onclick="septimaGeracion()">7ma Generación</button>
+        <button id="btnOctavaGeneracion" class="btnCambiarPokemon" onclick="octavaGeracion()">8va Generación</button>
+        <button id="btnNovenaGeneracion" class="btnCambiarPokemon" onclick="novenaGeracion()">9va Generación</button>
+      </div>
+   
+    
+    </div>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
